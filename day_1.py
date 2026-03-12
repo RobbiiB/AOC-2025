@@ -3,6 +3,7 @@ from time import time
 with open("data1.txt", "r") as file:
     rawdata:str = file.read()
     data:list[str] = rawdata.split("\n")
+    file.close()
 
 position:int = 50
 zero_counter=0
